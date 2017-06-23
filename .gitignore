@@ -1,6 +1,39 @@
-composer.phar
+*.DS_Store
+/var/cache/*
+/var/logs/*
+!var/cache/.gitkeep
+!var/logs/.gitkeep
+
+# Email spool folder
+/var/spool/*
+
+# Cache, session files and logs (Symfony3)
+/var/sessions/*
+!var/sessions/.gitkeep
+
+# Parameters
+/app/config/database.php
+
+# Managed by Composer
+/app/bootstrap.php.cache
+/var/bootstrap.php.cache
+/bin/*
+!bin/console
 /vendor/
 
-# Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
-# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
-# composer.lock
+# Assets and user uploads
+/web/bundles/
+/web/uploads/
+
+# PHPUnit
+/app/phpunit.xml
+/phpunit.xml
+
+.idea
+vendor/
+node_modules/
+npm-debug.log
+
+.env
+composer.phar
+
